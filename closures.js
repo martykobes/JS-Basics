@@ -152,20 +152,27 @@ var test = kobes(marty, 3);
 
   Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
 
-    //Answer Here
+    should log a 1 wait a second then log a 2 and so on
+    
 
 
   Now, run the function in your console and note what happpens.
 
   Was your answer right or wrong?
 
-    //Answer Here
+wrong
 
 
   Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc)
 */
 
-    //Code Here
+var counter = function(){
+    for (var i=1; i<=5; i++) {
+      setTimeout( function timer(i){
+          console.log( i );
+      }, i*1000 , i);
+    }
+  };
 
 
 
