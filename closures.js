@@ -98,6 +98,9 @@ function kobes(cb) {
   
 var test = kobes(marty);
 test();
+function marty(a) {
+    alert(a);
+}
 
 
 //Next Problem
@@ -120,22 +123,6 @@ function fnCounter(func,n) {
 }
 
 
-function marty(a) {
-    alert(a);
-}
-function kobes(cb, n) {
-    var counter = 0;
-    return function(a) {
-        if(counter <= n){
-            cb(a);
-            counter++
-        } else {
-            console.log('done');
-        };
-    };
-};
-  
-var test = kobes(marty, 3);
 
 //Next Problem
 
@@ -191,6 +178,5 @@ var counter = function(){
   funcArray[5]() //5
 
   *Hint: Don't let this fool you. Break down what's really happening here.
-*/
 
 
